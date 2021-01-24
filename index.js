@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  const value = parseInt(core.getInput('value'));
+  const value = core.getInput('value');
   const start = parseInt(core.getInput('start'));
   const end = core.getInput('end');
 
@@ -12,7 +12,7 @@ try {
     result = value.slice(start);
   } else {
     console.log(`Slice '${value}' from ${start} to ${end}`);
-    result = value.substring(start, parseInt(end));
+    result = value.slice(start, parseInt(end));
   }
 
   core.setOutput("result", result);

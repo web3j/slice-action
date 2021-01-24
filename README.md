@@ -31,11 +31,10 @@ A String, representing the extracted part of the string.
 ## Example usage
 
 ```yaml
-uses: web3j/slice-action@v1.1
+uses: web3j/slice-action@v1.3
 with:
   value: 'Mona the Octocat'
   start: '9'
 ```
 
 Result: `Octocat`
-
