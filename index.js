@@ -2,9 +2,9 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  const value = core.getInput('value');
-  const start = core.getInput('start');
-  const end = core.getInput('end');
+  const value = parseInt(core.getInput('value'));
+  const start = parseInt(core.getInput('start'));
+  const end = parseInt(core.getInput('end'));
 
   var result;
   if (end == null || end.length == 0) {
