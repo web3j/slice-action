@@ -31,7 +31,7 @@ A String, representing the extracted part of the string.
 ## Example usage
 
 ```yaml
-uses: web3j/slice-action@v1.0
+uses: web3j/slice-action@v1.1
 with:
   value: 'Mona the Octocat'
   start: '9'
