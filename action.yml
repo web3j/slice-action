@@ -1,0 +1,19 @@
+name: 'Slice'
+description: 'Extracts parts of a string and returns the extracted parts in a new string.'
+inputs:
+  value:  # id of input
+    description: 'What to substring'
+    required: true
+  start:
+    description: 'The position where to begin the extraction. First character is at position 0'
+    required: true
+    default: '0'
+  end:
+    description: 'The position (up to, but not including) where to end the extraction'
+    required: false # value length by default
+outputs:
+  result: 
+    description: 'A String, representing the extracted part of the string'
+runs:
+  using: 'node12'
+  main: 'index.js'
